@@ -1,0 +1,107 @@
+/* Reinicio básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Fondo general */
+body {
+  background: linear-gradient(135deg, #1a0000, #330000, #660000);
+  color: #fff;
+  text-align: center;
+}
+
+/* Encabezado */
+header {
+  padding: 60px 20px 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 2px solid #ff2e2e;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+header h1 {
+  font-size: 2.7em;
+  color: #ff3b3b;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.1em;
+  color: #f8caca;
+  margin-top: 8px;
+}
+
+/* Contenedor principal */
+.proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  padding: 60px 40px;
+}
+
+/* Tarjetas */
+.tarjeta {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 80, 80, 0.5);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(255, 50, 50, 0.6);
+}
+
+/* Imágenes */
+.tarjeta img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255, 80, 80, 0.3);
+}
+
+/* Títulos */
+.tarjeta h2 {
+  color: #ff4b4b;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+/* Descripción */
+.tarjeta p {
+  color: #f5dcdc;
+  font-size: 0.95em;
+  margin-bottom: 18px;
+  line-height: 1.4em;
+}
+
+/* Botón */
+.boton {
+  display: inline-block;
+  text-decoration: none;
+  background: #ff4d4d;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.boton:hover {
+  background: #cc0000;
+  transform: scale(1.05);
+}
+
+/* Pie de página */
+footer {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  font-size: 0.9em;
+  color: #f8bfbf;
+  border-top: 1px solid rgba(255, 60, 60, 0.4);
+  margin-top: 50px;
+}
