@@ -14,24 +14,42 @@
 
   <section class="proyectos">
     <div class="tarjeta">
-      <img src="imagen factura portafolio.png" alt="factura">
+      <img src="./factura.png" alt="factura">
       <h2>factura</h2>
       <p>Sitio web de una factura web.</p>
       <a href="https://nicolasarias1709.github.io/fact/" target="_blank" class="boton">Ver Proyecto</a>
     </div>
 
     <div class="tarjeta">
-      <img src="imagen juego portafolio.png" alt="Gold & Glory">
-      <h2>Gold & Glory </h2>
+      <img src="./juego.png" alt="Gold & Glory">
+      <h2>Gold & Glory</h2>
       <p>Página estilo videojuego medieval con video de fondo.</p>
       <a href="https://nicolasarias1709.github.io/juego3/" target="_blank" class="boton">Ver Proyecto</a>
     </div>
 
     <div class="tarjeta">
-      <img src="paginade tienda portafolio.png" alt="Beamstore">
-      <h2>tienda web </h2>
+      <img src="./tienda.png" alt="Beamstore">
+      <h2>tienda web</h2>
       <p>Tienda virtual moderna con diseño limpio y secciones de productos.</p>
       <a href="https://nicolasarias1709.github.io/paginawebNicolas/" target="_blank" class="boton">Ver Proyecto</a>
+    </div>
+    
+    <div class="tarjeta">
+      <!-- REEMPLAZA LA URL DE LA IMAGEN -->
+      <img src="./registro.png" alt="Registro">
+      <h2>Registro</h2>
+      <p>Formulario de registro con validaciones y diseño moderno.</p>
+      <!-- REEMPLAZA LA URL DEL PROYECTO -->
+      <a href="https://nicolasarias1709.github.io/registro/" target="_blank" class="boton">Ver Proyecto</a>
+    </div>
+    
+    <div class="tarjeta">
+      <!-- REEMPLAZA LA URL DE LA IMAGEN -->
+      <img src="./jardineria.png" alt="Jardinería">
+      <h2>Jardinería</h2>
+      <p>Página web sobre jardinería con diseños naturales y catálogo de plantas.</p>
+      <!-- REEMPLAZA LA URL DEL PROYECTO -->
+      <a href="https://majo-g.github.io/jardiin/?authuser=0" target="_blank" class="boton">Ver Proyecto</a>
     </div>
   </section>
 
@@ -40,3 +58,198 @@
   </footer>
 </body>
 </html>
+
+<style>
+  /* Reinicio básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* Fondo general */
+  body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    padding-bottom: 40px;
+  }
+
+  /* Encabezado */
+  header {
+    padding: 40px 20px 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 2px solid #4cc9f0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    margin-bottom: 40px;
+  }
+
+  header h1 {
+    font-size: 2.8em;
+    color: #4cc9f0;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  }
+
+  header p {
+    font-size: 1.2em;
+    color: #a9d6f3;
+    margin-top: 8px;
+  }
+
+  /* Contenedor principal - 5 tarjetas en una fila */
+  .proyectos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0 30px;
+    max-width: 1800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  /* Tarjetas - Todas del mismo tamaño */
+  .tarjeta {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(76, 201, 240, 0.4);
+    border-radius: 12px;
+    padding: 25px;
+    width: 220px; /* Ancho fijo para que entren 5 */
+    min-height: 380px; /* Altura mínima para consistencia */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(76, 201, 240, 0.3);
+    border-color: #4cc9f0;
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  /* Imágenes */
+  .tarjeta img {
+    width: 100%;
+    height: 140px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(76, 201, 240, 0.3);
+    object-fit: cover;
+  }
+
+  /* Títulos */
+  .tarjeta h2 {
+    color: #4cc9f0;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Descripción */
+  .tarjeta p {
+    color: #d1e9ff;
+    font-size: 0.95em;
+    margin-bottom: 25px;
+    line-height: 1.5em;
+    flex-grow: 1;
+  }
+
+  /* Botón */
+  .boton {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(to right, #4cc9f0, #4361ee);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95em;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(76, 201, 240, 0.3);
+  }
+
+  .boton:hover {
+    background: linear-gradient(to right, #3aa8d0, #3a56d4);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(76, 201, 240, 0.4);
+  }
+
+  /* Footer */
+  footer {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    font-size: 1em;
+    color: #a9d6f3;
+    border-top: 1px solid rgba(76, 201, 240, 0.3);
+    margin-top: 60px;
+  }
+
+  /* Responsive para pantallas más pequeñas */
+  @media (max-width: 1400px) {
+    .proyectos {
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    .tarjeta {
+      width: 200px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .proyectos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+    
+    .tarjeta {
+      width: 100%;
+      min-height: 370px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .proyectos {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 0 20px;
+    }
+    
+    .tarjeta {
+      min-height: 350px;
+    }
+    
+    header h1 {
+      font-size: 2.2em;
+    }
+    
+    header p {
+      font-size: 1.1em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .proyectos {
+      grid-template-columns: 1fr;
+      max-width: 350px;
+      margin: 0 auto;
+    }
+    
+    .tarjeta {
+      min-height: 330px;
+    }
+  }
+</style>
