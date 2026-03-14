@@ -69,14 +69,20 @@
       <a href="https://nicolasarias1709.github.io/pokemon/" target="_blank" class="boton">Ver Proyecto</a>
     </div>
 
-    <!-- 🆕 NUEVO PROYECTO: VETERINARIA (citas) -->
+    <!-- Veterinaria -->
     <div class="tarjeta">
-      <!-- imagen placeholder temática veterinaria, conservamos nombre local -->
       <img src="./veterinaria.png" alt="Veterinaria Citas">
       <h2>Veterinaria</h2>
       <p>Sistema de agendamiento de citas para mascotas · interfaz amigable y horarios.</p>
-      <!-- enlace sugerido (puedes actualizarlo después) -->
       <a href="https://nicolasarias1709.github.io/Registro-Veterinaria/" target="_blank" class="boton">Ver Proyecto</a>
+    </div>
+
+    <!-- Control de Inventario -->
+    <div class="tarjeta">
+      <img src="./ControlPortafolio.png" alt="Control de Inventario">
+      <h2>Control de Inventario</h2>
+      <p>Sistema de gestión y control de inventario con interfaz moderna.</p>
+      <a href="https://nicolasarias1709.github.io/ControlInventario/" target="_blank" class="boton">Ver Proyecto</a>
     </div>
   </section>
 
@@ -84,9 +90,7 @@
     <p>© 2025 - Creado por Nicolas Arias</p>
   </footer>
 
-  <!-- mismo estilo (integrado para que funcione sin archivo externo) -->
   <style>
-    /* Reinicio básico */
     * {
       margin: 0;
       padding: 0;
@@ -94,7 +98,6 @@
       font-family: "Poppins", sans-serif;
     }
 
-    /* Fondo general */
     body {
       background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
       color: #fff;
@@ -103,7 +106,6 @@
       padding-bottom: 40px;
     }
 
-    /* Encabezado */
     header {
       padding: 40px 20px 30px;
       background: rgba(255, 255, 255, 0.05);
@@ -126,7 +128,6 @@
       margin-top: 8px;
     }
 
-    /* Contenedor principal - ahora 8 tarjetas */
     .proyectos {
       display: flex;
       justify-content: center;
@@ -137,14 +138,13 @@
       flex-wrap: wrap;
     }
 
-    /* Tarjetas - todas del mismo tamaño */
     .tarjeta {
       background: rgba(255, 255, 255, 0.08);
       border: 1px solid rgba(76, 201, 240, 0.4);
       border-radius: 12px;
       padding: 25px;
-      width: 220px; /* Ancho fijo */
-      min-height: 400px; /* ligeramente mayor para descripción más larga (veterinaria) */
+      width: 220px;
+      min-height: 400px;
       display: flex;
       flex-direction: column;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -158,7 +158,6 @@
       background: rgba(255, 255, 255, 0.12);
     }
 
-    /* Imágenes */
     .tarjeta img {
       width: 100%;
       height: 140px;
@@ -168,7 +167,6 @@
       object-fit: cover;
     }
 
-    /* Títulos */
     .tarjeta h2 {
       color: #4cc9f0;
       font-size: 1.4em;
@@ -180,7 +178,6 @@
       text-transform: capitalize;
     }
 
-    /* Descripción */
     .tarjeta p {
       color: #d1e9ff;
       font-size: 0.95em;
@@ -189,7 +186,6 @@
       flex-grow: 1;
     }
 
-    /* Botón */
     .boton {
       display: inline-block;
       text-decoration: none;
@@ -213,7 +209,6 @@
       box-shadow: 0 6px 15px rgba(76, 201, 240, 0.4);
     }
 
-    /* Footer */
     footer {
       background: rgba(255, 255, 255, 0.05);
       padding: 25px;
@@ -223,7 +218,6 @@
       margin-top: 60px;
     }
 
-    /* responsive */
     @media (max-width: 1400px) {
       .proyectos {
         justify-content: center;
@@ -238,7 +232,7 @@
     @media (max-width: 1200px) {
       .proyectos {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 8 items -> 2 filas de 4 */
+        grid-template-columns: repeat(4, 1fr);
         gap: 25px;
       }
       .tarjeta {
